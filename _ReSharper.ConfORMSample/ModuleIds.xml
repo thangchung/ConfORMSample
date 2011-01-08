@@ -1,0 +1,8 @@
+<Modules>
+  <Module PersistentId="97E6122F-BBB9-4367-8204-A2C78C43EE4A" ModuleId="ConfORMSample.Entities" />
+  <Module PersistentId="E520CB85-08BB-40A9-A94A-2175A30AB40C" ModuleId="ConfORMSample.ConfORM" />
+  <Module PersistentId="855AEDE9-05DB-4819-A28E-8164D0C959BF" ModuleId="ConfORMSample.Core" />
+  <Module PersistentId="A27961F2-E879-4917-8047-58D8F94B9AEB" ModuleId="MappingTesting" />
+  <Module PersistentId="EFAF1C9C-AD6E-43EC-AD66-D9EBF4C7A58C" ModuleId="ConfORMSample.Repository" />
+  <Module PersistentId="C387C2E8-8A61-4979-BF8A-E2DA5C111698" ModuleId="ConfORMSample.Entities_1" />
+</Modules>

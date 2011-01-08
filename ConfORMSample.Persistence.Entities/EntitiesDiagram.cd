@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Interface Name="ConfORMSample.Entities.Contract.ICategory">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAgAAAAAAEAA=</HashCode>
+      <FileName>Contract\ICategory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="News" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Interface Name="ConfORMSample.Entities.Contract.INews">
+    <Position X="3.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAggAAEACAAAAAAAAAAACCAAAAAAAAAAACAA=</HashCode>
+      <FileName>Contract\INews.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Category" />
+      <Property Name="Poll" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="ConfORMSample.Entities.Contract.IPoll">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAACAAAACAAAAAAAAAAAAAAAAAACAAABAgAAAAEAA=</HashCode>
+      <FileName>Contract\IPoll.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="News" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Users" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Interface Name="ConfORMSample.Entities.Contract.IUser">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAACAAAAAAAAAAAAAAACAQAAAAAAAAA=</HashCode>
+      <FileName>Contract\IUser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Polls" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

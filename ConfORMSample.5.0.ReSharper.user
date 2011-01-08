@@ -1,0 +1,166 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="interface" priority="0" />
+      <Item value="IEntity" priority="0" />
+      <Item value="TId`0" priority="0" />
+      <Item value="int" priority="1" />
+      <Item value="Guid`0" priority="7" />
+      <Item value="public" priority="5" />
+      <Item value="ctor" priority="3" />
+      <Item value="return" priority="2" />
+      <Item value="null" priority="0" />
+      <Item value="IConfigurationBuilder`0" priority="0" />
+      <Item value="string" priority="3" />
+      <Item value="configurationBuilder" priority="0" />
+      <Item value="private" priority="2" />
+      <Item value="static" priority="0" />
+      <Item value="configBuilder" priority="0" />
+      <Item value="abstract" priority="1" />
+      <Item value="protected" priority="0" />
+      <Item value="Action`0" priority="0" />
+      <Item value="IDbIntegrationConfigurationProperties`0" priority="0" />
+      <Item value="configure" priority="0" />
+      <Item value="void" priority="4" />
+      <Item value="connectionString" priority="0" />
+      <Item value="TestMethod" priority="1" />
+      <Item value="ConfOrmConfigBuilder" priority="0" />
+      <Item value="TestInitialize" priority="1" />
+      <Item value="new" priority="3" />
+      <Item value="SqlServerConfORMConfigBuilder" priority="0" />
+      <Item value="Assert`0" priority="1" />
+      <Item value="orm" priority="0" />
+      <Item value="ICustomizersHolder`0" priority="0" />
+      <Item value="DefaultPatternsAppliersHolder`0" priority="0" />
+      <Item value="Category`0" priority="1" />
+      <Item value="CategoryRepositoryTesting`0" priority="0" />
+      <Item value="_categoryRepository" priority="2" />
+      <Item value="CategoryRepository" priority="0" />
+      <Item value="GetSession`0" priority="0" />
+      <Item value="DbContext`0" priority="0" />
+      <Item value="using" priority="1" />
+      <Item value="_dbContext" priority="0" />
+      <Item value="dbContext" priority="0" />
+      <Item value="Address`0" priority="1" />
+      <Item value="Polls" priority="0" />
+      <Item value="polls" priority="0" />
+      <Item value="this" priority="1" />
+      <Item value="virtual" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Contracts.Contract">
+      <Item value="Requires`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.Cfg.Configuration">
+      <Item value="DataBaseIntegration`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
+      <Item value="IsNotNull`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConfOrm.ObjectRelationalMapper">
+      <Item value="Patterns" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConfOrm.IPatternsHolder">
+      <Item value="PoidStrategies" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.ICollection`1">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConfORMSample.Entities.Category">
+      <Item value="News" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ConfOrm.NH.Generators">
+      <Item value="Guid" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConfORMSample.Repository.CategoryRepository">
+      <Item value="SaveOrUpdate`0" priority="0" />
+      <Item value="GetDbContext`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConfORMSample.Core.Persistence.IDbContext">
+      <Item value="BeginTransaction`0" priority="0" />
+      <Item value="CommitChanges`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/f:Address.cs" caret="1541" fromTop="32" />
+      <File id="EFAF1C9C-AD6E-43EC-AD66-D9EBF4C7A58C/d:Contracts/f:ICategoryRepository.cs" caret="0" fromTop="0" />
+      <File id="EFAF1C9C-AD6E-43EC-AD66-D9EBF4C7A58C/f:CategoryRepository.cs" caret="0" fromTop="0" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/f:IEntity.cs" caret="16" fromTop="0" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/f:Poll.cs" caret="0" fromTop="0" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/d:Contract/f:IPoll.cs" caret="61" fromTop="1" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/f:News.cs" caret="0" fromTop="0" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/d:Contract/f:INews.cs" caret="0" fromTop="0" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/f:User.cs" caret="0" fromTop="0" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/d:Contract/f:IUser.cs" caret="107" fromTop="3" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/f:EntityBase.cs" caret="17" fromTop="0" />
+      <File id="A27961F2-E879-4917-8047-58D8F94B9AEB/f:ConfigurationTesting.cs" caret="901" fromTop="16" />
+      <File id="A27961F2-E879-4917-8047-58D8F94B9AEB/f:ConfiguratorTesting.cs" caret="0" fromTop="0" />
+      <File id="A27961F2-E879-4917-8047-58D8F94B9AEB/f:App.config" caret="122" fromTop="2" />
+      <File id="A27961F2-E879-4917-8047-58D8F94B9AEB/f:CategoryRepositoryTesting.cs" caret="1387" fromTop="20" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/d:Contract/f:ICategory.cs" caret="377" fromTop="14" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/f:Category.cs" caret="0" fromTop="0" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/f:ConfORMConfigBuilder.cs" caret="0" fromTop="0" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/f:SqlServerConfORMConfigBuilder.cs" caret="0" fromTop="0" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/d:Repository/f:RepositoryBase.cs" caret="0" fromTop="0" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/d:NHibernate/f:DbContext.cs" caret="0" fromTop="0" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/d:NHibernate/f:ISessionStorage.cs" caret="0" fromTop="0" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/d:NHibernate/f:NHibernateSession.cs" caret="6393" fromTop="17" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/d:NHibernate/f:SimpleSessionStorage.cs" caret="0" fromTop="0" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/f:IConfigBuilder.cs" caret="0" fromTop="0" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/d:Appliers/f:ManyToOneColumnNamingApplier.cs" caret="0" fromTop="0" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/d:Appliers/f:OneToManyKeyColumnNamingApplier.cs" caret="0" fromTop="0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/f:EntityBase.cs" caret="1381" fromTop="49" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/f:ConfORMConfigBuilder.cs" caret="0" fromTop="0" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/f:IEntity.cs" caret="102" fromTop="0" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/f:IEntity.cs" caret="16" fromTop="0" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/d:Repository/f:RepositoryBase.cs" caret="0" fromTop="0" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/f:Poll.cs" caret="115" fromTop="3" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/f:User.cs" caret="153" fromTop="4" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/d:Contract/f:ICategory.cs" caret="174" fromTop="3" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/d:Contract/f:ICategory.cs" caret="70" fromTop="3" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/f:Category.cs" caret="0" fromTop="0" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/f:News.cs" caret="0" fromTop="0" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/d:Contract/f:INews.cs" caret="34" fromTop="2" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/d:Contract/f:IPoll.cs" caret="217" fromTop="2" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/d:Contract/f:IPoll.cs" caret="61" fromTop="1" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/f:Poll.cs" caret="0" fromTop="0" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/d:Contract/f:IUser.cs" caret="13" fromTop="4" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/d:Contract/f:IUser.cs" caret="107" fromTop="3" />
+      <File id="97E6122F-BBB9-4367-8204-A2C78C43EE4A/f:EntityBase.cs" caret="15" fromTop="0" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/f:SqlServerConfORMConfigBuilder.cs" caret="199" fromTop="6" />
+      <File id="A27961F2-E879-4917-8047-58D8F94B9AEB/f:ConfigurationTesting.cs" caret="139" fromTop="3" />
+      <File id="A27961F2-E879-4917-8047-58D8F94B9AEB/f:CategoryRepositoryTesting.cs" caret="1002" fromTop="21" />
+      <File id="A27961F2-E879-4917-8047-58D8F94B9AEB/f:ConfigurationTesting.cs" caret="901" fromTop="16" />
+      <File id="A27961F2-E879-4917-8047-58D8F94B9AEB/f:App.config" caret="122" fromTop="2" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/d:NHibernate/f:NHibernateSession.cs" caret="570" fromTop="17" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/d:NHibernate/f:NHibernateSession.cs" caret="1217" fromTop="14" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/d:NHibernate/f:NHibernateSession.cs" caret="646" fromTop="18" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/d:NHibernate/f:NHibernateSession.cs" caret="2700" fromTop="10" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/d:NHibernate/f:NHibernateSession.cs" caret="2787" fromTop="4" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/d:NHibernate/f:NHibernateSession.cs" caret="5420" fromTop="19" />
+      <File id="E520CB85-08BB-40A9-A94A-2175A30AB40C/d:NHibernate/f:NHibernateSession.cs" caret="6393" fromTop="0" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files\NUnit 2.5.9\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>
