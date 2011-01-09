@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections.Concurrent;
 using System.Diagnostics.Contracts;
 using System.Linq;
 using ConfORMSample.Core.Constant;
@@ -14,7 +14,9 @@ namespace ConfORMSample.ConfORM.NHibernate
 
         private static IInterceptor _registeredInterceptor;
 
-        private static readonly Dictionary<string, ISessionFactory> SessionFactories = new Dictionary<string, ISessionFactory>();
+        private static readonly ConcurrentDictionary<string, ISessionFactory> SessionFactories = new ConcurrentDictionary<string, ISessionFactory>();
+
+        private static ISessionFactory _slug; // for the out slug
 
         private static IConfigBuilder _configBuilder;
 
@@ -87,7 +89,7 @@ namespace ConfORMSample.ConfORM.NHibernate
             Contract.Requires(!SessionFactories.ContainsKey(factoryKey),
                 "A session factory has already been configured with the key of " + factoryKey);
 
-            SessionFactories.Add(factoryKey, sessionFactory);
+            SessionFactories.TryAdd(factoryKey, sessionFactory);
 
             return cfg;
         }
@@ -180,7 +182,7 @@ namespace ConfORMSample.ConfORM.NHibernate
         {
             if (GetSessionFactoryFor(factoryKey) != null)
             {
-                SessionFactories.Remove(factoryKey);
+                SessionFactories.TryRemove(factoryKey, out _slug);
             }
         }
 
