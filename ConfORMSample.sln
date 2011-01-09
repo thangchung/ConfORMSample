@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfORMSample.Persistence.Entities", "ConfORMSample.Persistence.Entities\ConfORMSample.Persistence.Entities.csproj", "{97E6122F-BBB9-4367-8204-A2C78C43EE4A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfORMSample.NewsMgt.Entities", "ConfORMSample.NewsMgt.Entities\ConfORMSample.NewsMgt.Entities.csproj", "{97E6122F-BBB9-4367-8204-A2C78C43EE4A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfORMSample.ConfORM", "ConfORMSample.ConfORM\ConfORMSample.ConfORM.csproj", "{E520CB85-08BB-40A9-A94A-2175A30AB40C}"
 EndProject
@@ -12,6 +12,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfORMTesting", "MappingTesting\ConfORMTesting.csproj", "{A27961F2-E879-4917-8047-58D8F94B9AEB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfORMSample.Repository", "ConfORMSample.Repository\ConfORMSample.Repository.csproj", "{EFAF1C9C-AD6E-43EC-AD66-D9EBF4C7A58C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfORMSample.Football.Entities", "ConfORMSample.Football.Entities\ConfORMSample.Football.Entities.csproj", "{E6CC5963-B581-4448-981A-96A466DA4550}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfORMSample.Common.Entities", "ConfORMSample.Common.Entities\ConfORMSample.Common.Entities.csproj", "{D2E8E73C-776B-45AE-99CB-FEBF11FA3CC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfORMSample.Football.ConfORM", "ConfORMSample.Football.ConfORM\ConfORMSample.Football.ConfORM.csproj", "{221F1189-049C-41DD-A713-476EFC60AAAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfORMSample.NewsMgt.ConfORM", "ConfORMSample.NewsMgt.ConfORM\ConfORMSample.NewsMgt.ConfORM.csproj", "{CC9568E2-E28D-49FD-9B3F-5E4190702DF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +47,22 @@ Global
 		{EFAF1C9C-AD6E-43EC-AD66-D9EBF4C7A58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFAF1C9C-AD6E-43EC-AD66-D9EBF4C7A58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFAF1C9C-AD6E-43EC-AD66-D9EBF4C7A58C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6CC5963-B581-4448-981A-96A466DA4550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6CC5963-B581-4448-981A-96A466DA4550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6CC5963-B581-4448-981A-96A466DA4550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6CC5963-B581-4448-981A-96A466DA4550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2E8E73C-776B-45AE-99CB-FEBF11FA3CC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2E8E73C-776B-45AE-99CB-FEBF11FA3CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2E8E73C-776B-45AE-99CB-FEBF11FA3CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2E8E73C-776B-45AE-99CB-FEBF11FA3CC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{221F1189-049C-41DD-A713-476EFC60AAAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{221F1189-049C-41DD-A713-476EFC60AAAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{221F1189-049C-41DD-A713-476EFC60AAAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{221F1189-049C-41DD-A713-476EFC60AAAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC9568E2-E28D-49FD-9B3F-5E4190702DF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC9568E2-E28D-49FD-9B3F-5E4190702DF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC9568E2-E28D-49FD-9B3F-5E4190702DF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC9568E2-E28D-49FD-9B3F-5E4190702DF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

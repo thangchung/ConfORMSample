@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using ConfORMSample.Common.Entities.Contract;
 
-namespace ConfORMSample.Persistence.Entities.Contract
+namespace ConfORMSample.NewsMgt.Entities.Contract
 {
     public interface ICategory : IEntity<Guid>
     {

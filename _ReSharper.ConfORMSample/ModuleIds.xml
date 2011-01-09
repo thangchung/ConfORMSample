@@ -4,5 +4,8 @@
   <Module PersistentId="855AEDE9-05DB-4819-A28E-8164D0C959BF" ModuleId="ConfORMSample.Core" />
   <Module PersistentId="A27961F2-E879-4917-8047-58D8F94B9AEB" ModuleId="MappingTesting" />
   <Module PersistentId="EFAF1C9C-AD6E-43EC-AD66-D9EBF4C7A58C" ModuleId="ConfORMSample.Repository" />
-  <Module PersistentId="C387C2E8-8A61-4979-BF8A-E2DA5C111698" ModuleId="ConfORMSample.Entities_1" />
+  <Module PersistentId="E6CC5963-B581-4448-981A-96A466DA4550" ModuleId="ConfORMSample.Football.Entities" />
+  <Module PersistentId="D2E8E73C-776B-45AE-99CB-FEBF11FA3CC6" ModuleId="ConfORMSample.Common.Entities" />
+  <Module PersistentId="221F1189-049C-41DD-A713-476EFC60AAAB" ModuleId="ConfORMSample.Football.ConfORM" />
+  <Module PersistentId="CC9568E2-E28D-49FD-9B3F-5E4190702DF0" ModuleId="ConfORMSample.NewsMgt.ConfORM" />
 </Modules>

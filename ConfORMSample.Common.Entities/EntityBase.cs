@@ -1,6 +1,7 @@
 ﻿using System;
+using ConfORMSample.Common.Entities.Contract;
 
-namespace ConfORMSample.Persistence.Entities
+namespace ConfORMSample.Core
 {
     public abstract class EntityBase<TId> : IEntity<TId>
     {

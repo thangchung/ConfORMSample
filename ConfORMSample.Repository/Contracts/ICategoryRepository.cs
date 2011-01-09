@@ -1,6 +1,6 @@
 ﻿using System;
 using ConfORMSample.Core.Persistence;
-using ConfORMSample.Persistence.Entities;
+using ConfORMSample.NewsMgt.Entities;
 
 namespace ConfORMSample.Repository.Contracts
 {

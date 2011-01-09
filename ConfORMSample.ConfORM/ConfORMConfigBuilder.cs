@@ -7,7 +7,6 @@ using ConfORMSample.Core;
 using ConfORMSample.Core.Configuration;
 using ConfORMSample.Core.Extensions;
 using ConfORMSample.Core.Helpers;
-using ConfORMSample.Persistence.Entities;
 using NHibernate.ByteCode.Castle;
 using NHibernate.Cfg;
 using NHibernate.Cfg.Loquacious;
@@ -27,16 +26,18 @@ namespace ConfORMSample.ConfORM
 
         private readonly IEnumerable<string> _assemblies;
 
-        protected ConfORMConfigBuilder(IEnumerable<string> assemblies)
-            : this(new Configurator(), assemblies)
+        private readonly string _databaseSchema;
+
+        protected ConfORMConfigBuilder(IEnumerable<string> assemblies, string databaseSchema)
+            : this(new Configurator(), assemblies, databaseSchema)
         {
-            _assemblies = assemblies;
         }
 
-        protected ConfORMConfigBuilder(IConfigurator configurator, IEnumerable<string> assemblies)
+        protected ConfORMConfigBuilder(IConfigurator configurator, IEnumerable<string> assemblies, string databaseSchema)
         {
             _configurator = configurator;
             _assemblies = assemblies;
+            _databaseSchema = databaseSchema;
         }
 
         public abstract void GetDatabaseIntegration(IDbIntegrationConfigurationProperties dBIntegration, string connectionString);
@@ -47,6 +48,7 @@ namespace ConfORMSample.ConfORM
         {
             Contract.Requires(!string.IsNullOrEmpty(connectionString), "ConnectionString is null or empty");
             Contract.Requires(!string.IsNullOrEmpty(sessionFactoryName), "SessionFactory name is null or empty");
+            Contract.Requires(!string.IsNullOrEmpty(_databaseSchema), "Database Schema is null or empty");
             Contract.Requires(_configurator != null, "Configurator is null");
 
             return CatchExceptionHelper.TryCatchFunction(
@@ -68,7 +70,7 @@ namespace ConfORMSample.ConfORM
                         configure.SetProperty("hbm2ddl.auto", "create-drop");
                     }
 
-                    configure.Properties.Add("default_schema", _configurator.GetAppSettingString("DefaultSchema"));
+                    configure.Properties.Add("default_schema", _databaseSchema);
                     configure.AddDeserializedMapping(GetMapping(),
                                                      _configurator.GetAppSettingString("DocumentFileName"));
 

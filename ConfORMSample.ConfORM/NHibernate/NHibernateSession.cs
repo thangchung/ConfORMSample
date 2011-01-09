@@ -28,7 +28,8 @@ namespace ConfORMSample.ConfORM.NHibernate
         public static Configuration Init(
                 IConfigBuilder configBuilder,
                 ISessionStorage storage,
-                string connectionString
+                string connectionString,
+                string factoryKey
             )
         {
             _configBuilder = configBuilder;
@@ -37,6 +38,16 @@ namespace ConfORMSample.ConfORM.NHibernate
 
             try
             {
+                if (!string.IsNullOrEmpty(factoryKey))
+                {
+                    var config = AddConfiguration(factoryKey, connectionString);
+
+                    if (config != null)
+                        DefaultFactoryKey = factoryKey;
+
+                    return config;
+                }
+
                 return AddConfiguration(DefaultFactoryKey, connectionString);
             }
             catch
@@ -45,6 +56,28 @@ namespace ConfORMSample.ConfORM.NHibernate
                 throw;
             }
         }
+
+        //[CLSCompliant(false)]
+        //public static Configuration Init(
+        //        IConfigBuilder configBuilder,
+        //        ISessionStorage storage,
+        //        string connectionString
+        //    )
+        //{
+        //    _configBuilder = configBuilder;
+
+        //    InitStorage(storage);
+
+        //    try
+        //    {
+        //        return AddConfiguration(DefaultFactoryKey, connectionString);
+        //    }
+        //    catch
+        //    {
+        //        Storage = null;
+        //        throw;
+        //    }
+        //}
 
         #endregion Init() overloads
 
@@ -191,7 +224,7 @@ namespace ConfORMSample.ConfORM.NHibernate
             return GetSessionFactoryFor(DefaultFactoryKey);
         }
 
-        public static readonly string DefaultFactoryKey = PersistanceConstants.DEFAULT_FACTORY_SESSION_KEY;
+        public static string DefaultFactoryKey = PersistanceConstants.DEFAULT_FACTORY_SESSION_KEY;
 
         public static ISessionStorage Storage { get; set; }
 

@@ -1,6 +1,6 @@
 ﻿using System;
 using ConfORMSample.ConfORM.Repository;
-using ConfORMSample.Persistence.Entities;
+using ConfORMSample.NewsMgt.Entities;
 using ConfORMSample.Repository.Contracts;
 
 namespace ConfORMSample.Repository

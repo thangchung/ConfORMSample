@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics.Contracts;
+using ConfORMSample.Common.Entities.Contract;
 using ConfORMSample.ConfORM.NHibernate;
 using ConfORMSample.Core;
 using ConfORMSample.Core.Constant;
 using ConfORMSample.Core.Persistence;
-using ConfORMSample.Persistence.Entities;
 using NHibernate;
 using NHibernate.Criterion;
 

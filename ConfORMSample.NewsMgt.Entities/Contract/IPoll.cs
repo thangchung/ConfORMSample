@@ -1,6 +1,7 @@
 ﻿using System;
+using ConfORMSample.Common.Entities.Contract;
 
-namespace ConfORMSample.Persistence.Entities.Contract
+namespace ConfORMSample.NewsMgt.Entities.Contract
 {
     public interface IPoll : IEntity<Guid>
     {

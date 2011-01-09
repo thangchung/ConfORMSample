@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using ConfORMSample.Persistence.Entities.Contract;
+using ConfORMSample.Core;
+using ConfORMSample.NewsMgt.Entities.Contract;
 using Iesi.Collections.Generic;
 
-namespace ConfORMSample.Persistence.Entities
+namespace ConfORMSample.NewsMgt.Entities
 {
     public class Category : EntityBase<Guid>, ICategory
     {

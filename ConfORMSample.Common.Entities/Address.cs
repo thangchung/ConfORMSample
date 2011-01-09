@@ -1,4 +1,4 @@
-﻿namespace ConfORMSample.Persistence.Entities
+﻿namespace ConfORMSample.Common.Entities
 {
     public class Address
     {

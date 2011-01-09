@@ -68,16 +68,19 @@
     <Compile Include="NHibernate\SimpleSessionStorage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\RepositoryBase.cs" />
-    <Compile Include="SqlServerConfORMConfigBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ConfORMSample.Common.Entities\ConfORMSample.Common.Entities.csproj">
+      <Project>{D2E8E73C-776B-45AE-99CB-FEBF11FA3CC6}</Project>
+      <Name>ConfORMSample.Common.Entities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ConfORMSample.Core\ConfORMSample.Core.csproj">
       <Project>{855AEDE9-05DB-4819-A28E-8164D0C959BF}</Project>
       <Name>ConfORMSample.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ConfORMSample.Persistence.Entities\ConfORMSample.Persistence.Entities.csproj">
+    <ProjectReference Include="..\ConfORMSample.NewsMgt.Entities\ConfORMSample.NewsMgt.Entities.csproj">
       <Project>{97E6122F-BBB9-4367-8204-A2C78C43EE4A}</Project>
-      <Name>ConfORMSample.Persistence.Entities</Name>
+      <Name>ConfORMSample.NewsMgt.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

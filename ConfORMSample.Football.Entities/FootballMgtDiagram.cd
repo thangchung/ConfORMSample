@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Interface Name="ConfORMSample.Football.Entities.Contract.IClub">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contract\IClub.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ConfORMSample.Football.Entities.Contract.IPosition">
+    <Position X="4.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Contract\IPosition.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Persons" />
+      <Property Name="Games" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Interface Name="ConfORMSample.Football.Entities.Contract.IGame">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Players" Type="ConfORMSample.Football.Entities.Contract.IPerson">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.329" Y="-0.263" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Positions" Type="ConfORMSample.Football.Entities.Contract.IPosition">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.373" Y="-0.213" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgQAAgAAIAAAQAAAAgAIAAAAAAAACAAAA=</HashCode>
+      <FileName>Contract\IGame.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Club" />
+      <Property Name="OpponentClub" />
+      <Property Name="Location" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Players" />
+      <Property Name="Positions" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Interface Name="ConfORMSample.Football.Entities.Contract.ILocation">
+    <Position X="6" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Contract\ILocation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ConfORMSample.Football.Entities.Contract.IPerson">
+    <Position X="0.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAACgAAAAAASAAAAAAAACAAAAAgAAAIA=</HashCode>
+      <FileName>Contract\IPerson.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Games" />
+      <Property Name="Positions" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

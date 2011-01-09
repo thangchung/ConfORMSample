@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using ConfORMSample.ConfORM;
 using ConfORMSample.ConfORM.NHibernate;
-using ConfORMSample.Persistence.Entities;
-using ConfORMSample.Persistence.Entities.Contract;
+using ConfORMSample.NewsMgt.ConfORM;
+using ConfORMSample.NewsMgt.Entities;
+using ConfORMSample.NewsMgt.Entities.Contract;
 using ConfORMSample.Repository;
 using ConfORMSample.Repository.Contracts;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -28,13 +29,13 @@ namespace ConfORMTesting
 
             _assemblies = new List<string>
                               {
-                                  "ConfORMSample.Persistence.Entities.dll",
+                                  "ConfORMSample.NewsMgt.Entities.dll",
                                   "ConfORMSample.ConfORM.dll"
                               };
 
-            _confOrmConfigBuilder = new SqlServerConfORMConfigBuilder(_assemblies);
+            _confOrmConfigBuilder = new SqlServerConfORMConfigBuilder(_assemblies, "ConfORMSample.dbo");
 
-            NHibernateSession.Init(_confOrmConfigBuilder, new SimpleSessionStorage(), _connectionString);
+            NHibernateSession.Init(_confOrmConfigBuilder, new SimpleSessionStorage(), _connectionString, string.Empty);
 
             _category = AddCategory();
         }

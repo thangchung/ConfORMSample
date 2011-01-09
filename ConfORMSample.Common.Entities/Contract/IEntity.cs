@@ -1,4 +1,4 @@
-﻿namespace ConfORMSample.Persistence.Entities
+﻿namespace ConfORMSample.Common.Entities.Contract
 {
     public interface IEntity<TId>
     {

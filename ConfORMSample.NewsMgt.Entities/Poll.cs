@@ -1,7 +1,8 @@
 ﻿using System;
-using ConfORMSample.Persistence.Entities.Contract;
+using ConfORMSample.Core;
+using ConfORMSample.NewsMgt.Entities.Contract;
 
-namespace ConfORMSample.Persistence.Entities
+namespace ConfORMSample.NewsMgt.Entities
 {
     public class Poll : EntityBase<Guid>, IPoll
     {

@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{EFAF1C9C-AD6E-43EC-AD66-D9EBF4C7A58C}</ProjectGuid>
+    <ProjectGuid>{D2E8E73C-776B-45AE-99CB-FEBF11FA3CC6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConfORMSample.Repository</RootNamespace>
-    <AssemblyName>ConfORMSample.Repository</AssemblyName>
+    <RootNamespace>ConfORMSample.Common.Entities</RootNamespace>
+    <AssemblyName>ConfORMSample.Common.Entities</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
-      <HintPath>..\Libs\NHibernate\NHibernate.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,32 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CategoryRepository.cs" />
-    <Compile Include="Contracts\ICategoryRepository.cs" />
-    <Compile Include="Contracts\IFootballResultRepository.cs" />
-    <Compile Include="FootballResultRepository.cs" />
+    <Compile Include="Address.cs" />
+    <Compile Include="EntityBase.cs" />
+    <Compile Include="Contract\IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConfORMSample.Common.Entities\ConfORMSample.Common.Entities.csproj">
-      <Project>{D2E8E73C-776B-45AE-99CB-FEBF11FA3CC6}</Project>
-      <Name>ConfORMSample.Common.Entities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ConfORMSample.ConfORM\ConfORMSample.ConfORM.csproj">
-      <Project>{E520CB85-08BB-40A9-A94A-2175A30AB40C}</Project>
-      <Name>ConfORMSample.ConfORM</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ConfORMSample.Core\ConfORMSample.Core.csproj">
       <Project>{855AEDE9-05DB-4819-A28E-8164D0C959BF}</Project>
       <Name>ConfORMSample.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ConfORMSample.Football.Entities\ConfORMSample.Football.Entities.csproj">
-      <Project>{E6CC5963-B581-4448-981A-96A466DA4550}</Project>
-      <Name>ConfORMSample.Football.Entities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ConfORMSample.NewsMgt.Entities\ConfORMSample.NewsMgt.Entities.csproj">
-      <Project>{97E6122F-BBB9-4367-8204-A2C78C43EE4A}</Project>
-      <Name>ConfORMSample.NewsMgt.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
